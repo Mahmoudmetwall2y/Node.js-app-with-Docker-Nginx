@@ -1,0 +1,6 @@
+services:
+  node-app:
+    container_name: node-cont
+    build: .
+    env_file:
+      - ./.env.example
