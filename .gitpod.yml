@@ -1,0 +1,14 @@
+image: gitpod/workspace-docker
+
+tasks:
+  - name: Start Dev Environment
+    init: |
+      docker-compose -f docker-compose.yml -f docker-compose.dev.yml build
+    command: |
+      docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+
+ports:
+  - port: 5000
+    onOpen: open-preview
+  - port: 8000
+    onOpen: ignore

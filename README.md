@@ -1,4 +1,6 @@
 # 🚀 Node.js + Docker + Nginx Production Setup
+[![Open in GitPod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Mahmoudmetwall2y/node-docker-nginx-setup)
+
 
 A professional Node.js project demonstrating **multi-stage Docker builds**, **Docker Compose for dev & prod**, and an **Nginx reverse proxy** for a production-ready deployment.
 
@@ -63,5 +65,15 @@ A professional Node.js project demonstrating **multi-stage Docker builds**, **Do
 
 
 
+---
+
+## 🌍 Try it Live
+
+You can spin up this project instantly in your browser with **GitPod**:
+
+[![Open in GitPod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Mahmoudmetwall2y/node-docker-nginx-setup)
+
+- Development server → opens automatically at **port 5000**
+- Production server → available manually at **port 8000**
 
 
