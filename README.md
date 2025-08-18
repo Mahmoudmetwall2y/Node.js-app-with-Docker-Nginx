@@ -33,7 +33,7 @@ A professional Node.js project demonstrating **multi-stage Docker builds**, **Do
 ├── Makefile                   # Shortcut commands
 └── README.md                  # Documentation
 
-
+---
 
 ## 📸 Screenshots  
 
@@ -43,7 +43,7 @@ A professional Node.js project demonstrating **multi-stage Docker builds**, **Do
 **Production Mode (Red Badge)**  
 ![Prod Screenshot](./assets/screenshots/prod-mode.jpg)  
 
-
+---
 
 ## 🖥️ Tech Stack  
 
@@ -52,7 +52,7 @@ A professional Node.js project demonstrating **multi-stage Docker builds**, **Do
 - ![Nginx](https://img.shields.io/badge/Nginx-ReverseProxy-green?logo=nginx)  
 - ![Express](https://img.shields.io/badge/Express.js-Backend-black?logo=express)  
 
-
+---
 
 ## 👨‍💻 Author  
 
