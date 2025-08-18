@@ -32,6 +32,7 @@ A professional Node.js project demonstrating **multi-stage Docker builds**, **Do
 ├── .dockerignore              # Ignore files for Docker builds
 ├── Makefile                   # Shortcut commands
 └── README.md                  # Documentation
+```
 
 ---
 
