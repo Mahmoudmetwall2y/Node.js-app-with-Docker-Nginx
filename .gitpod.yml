@@ -1,5 +1,3 @@
-image: gitpod/workspace-docker
-
 tasks:
   - name: Start Dev Environment
     init: |
