@@ -1,7 +1,11 @@
 const express = require("express");
 const os = require("os");
 const app = express();
-const PORT = 3000;
+// Allow the port to be configured via an environment variable so the
+// application can run in platforms where the port is assigned
+// dynamically (e.g. Docker, Heroku).
+const portFromEnv = parseInt(process.env.PORT, 10);
+const PORT = Number.isInteger(portFromEnv) ? portFromEnv : 3000;
 
 const ENV = process.env.NODE_ENV || "development";
 const getTimestamp = () => new Date().toLocaleString();
@@ -84,6 +88,7 @@ app.get("/health", (req, res) => {
   });
 });
 
-app.listen(PORT, "0.0.0.0", () =>
-  console.log(`Node app running on port ${PORT} in ${ENV} mode!`)
-);
+const server = app.listen(PORT, "0.0.0.0", () => {
+  const actualPort = server.address().port;
+  console.log(`Node app running on port ${actualPort} in ${ENV} mode!`);
+});
